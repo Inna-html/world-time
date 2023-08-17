@@ -1,8 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+
+import { Countries } from './components/countries/Countries';
 
 function App() {
   return (
+    <Countries />
+  )
+}
+
+export default App;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
@@ -19,7 +41,5 @@ function App() {
         </a>
       </header>
     </div>
-  );
-}
+  );*/
 
-export default App;

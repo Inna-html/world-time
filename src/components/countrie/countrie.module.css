@@ -1,0 +1,50 @@
+
+.countrie { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+
+    margin: 10px;
+    background-image: url('img/bg.jpg');
+    height: 100vh;
+    width: 100vw;
+}
+
+h1 {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    color: #c9ffc75d;
+    font-weight: 900;
+    font-size: 66px;
+    line-height: 26px;
+}
+
+h4 {
+    color: rgb(201, 201, 201);
+    margin: 10px;
+    font-style: italic;    
+    font-weight: 900;
+    font-size: 22px;
+    line-height: 26px;
+}
+
+input {
+    width: 300px;
+    height: 30px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    border: 4px inset #c9ffc775;
+    background: #b1cfaa66;
+    color: #000000cb
+}
+
+input::placeholder {
+    color: rgba(1, 1, 1, 0.483);
+    font-size: 18px;
+}
+
+
+
