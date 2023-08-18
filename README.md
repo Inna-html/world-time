@@ -1,3 +1,11 @@
+### add: @reduxjs/toolkit
+    "react-hook-form": "^7.45.4",
+    "react-redux": "^8.1.2",
+
+### add directory Redux
+
+#
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

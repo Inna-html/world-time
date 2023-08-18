@@ -39,6 +39,7 @@ input {
     border: 4px inset #c9ffc775;
     background: #b1cfaa66;
     color: #000000cb
+
 }
 
 input::placeholder {
@@ -46,5 +47,13 @@ input::placeholder {
     font-size: 18px;
 }
 
-
+button {
+    width: 60px;
+    height: 40px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    border: 4px inset #c9ffc775;
+    background: #b1cfaa66;
+    color: #000000cb
+}
 
