@@ -1,47 +1,38 @@
 import { useEffect, useState } from "react";
+
 import { CityService } from "../../services/city.service";
+import { useDispatch, /*useSelector*/ } from "react-redux";
+// import { cityActions } from "../../redux";
 import { Countrie } from "../countrie/Countrie";
-import { useDispatch, useSelector } from "react-redux";
-import { cityActions, cityReducer } from "../../redux";
-import { useForm } from "react-hook-form";
+// import { Errors } from "../errors/Errors";
+
 
 const Countries = () => {
-    
+   
     const [city, setCity] = useState();
-    
+
     const dispatch = useDispatch();
-
-    //const {errors} = useSelector(state => state.cityReducer);
-
-    const {reset} = useForm;
+    //const {city, error, loading, cityFromAPI} = useSelector(state => state.cityReducer);
 
     useEffect(() => {
         CityService.getAll().then(({data}) => setCity(data));
-    }, [])
+        //dispatch(cityActions.getAll())
+    }, [dispatch])
 
 
 
-const submit = async (data) => {
-    if (cityActions) {
-        await dispatch(CityService.updateByCity({city: setCity, city: data}))
-    } else {
-        await dispatch(CityService.create({city: data}))
-    }
-    reset();
-};
+return (
+    <div>
 
-    return (
-        <form>
+        {/*loading && <h4>Loaging...</h4>}
+        {error && <Errors key={error} errors={error} />}
+        {cityFromAPI && <h4> cityFromAPI </h4>*/}
 
-            <input type='text' placeholder="input you city"/>
-            <button onClick={()=>submit}>sub</button>
-
-            {city  && <Countrie key={city} city={city}/>}
-
-        </form>
-    )
+        {city && <Countrie key={city} city={city} />}
+        
+    </div>
+    );
 }
-
 
 export { Countries };
 

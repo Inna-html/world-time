@@ -54,6 +54,11 @@ button {
     font-size: 18px;
     border: 4px inset #c9ffc775;
     background: #b1cfaa66;
-    color: #000000cb
+    color: #000000a7
+}
+button:hover {
+    border: 4px inset #c9ffc789;
+    background: #b1cfaaa2;
+    color: #0000005b
 }
 
