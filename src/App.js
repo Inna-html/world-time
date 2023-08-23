@@ -1,9 +1,11 @@
-import { Countries } from './components/countries/Countries';
+import { CityContainer } from './components';
 
 
 function App() {
   return (
-    <Countries />
+    <div>
+      <CityContainer />
+    </div>
   )
 }
 
