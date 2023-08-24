@@ -1,14 +1,11 @@
-
-.countrie { 
+.city { 
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 
-
-
     margin: 10px;
-    background-image: url('img/bg.jpg');
+    background-image: url('les.jpg');
     height: 100vh;
     width: 100vw;
 }
@@ -20,6 +17,12 @@ h1 {
     font-weight: 900;
     font-size: 66px;
     line-height: 26px;
+}
+
+h2 {
+    color: rgba(255, 255, 255, 0.387);
+    font-weight: 800;
+    font-size: 28px;
 }
 
 h4 {
@@ -39,7 +42,6 @@ input {
     border: 4px inset #c9ffc775;
     background: #b1cfaa66;
     color: #000000cb
-
 }
 
 input::placeholder {
@@ -61,4 +63,3 @@ button:hover {
     background: #b1cfaaa2;
     color: #0000005b
 }
-

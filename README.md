@@ -1,9 +1,13 @@
 ### add: 
+    axios
     @reduxjs/toolkit
     "react-hook-form": "^7.45.4",
     "react-redux": "^8.1.2",
+    redux
 
-### add directory Redux
+#
+
+### CORS problem 
 
 #
 

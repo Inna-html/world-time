@@ -1,10 +1,10 @@
-import { CityContainer } from './components';
+import { Cities } from './components';
 
 
 function App() {
   return (
     <div>
-      <CityContainer />
+      <Cities />
     </div>
   )
 }
