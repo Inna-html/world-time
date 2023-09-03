@@ -1,0 +1,5 @@
+
+Header set Access-Control-Allow-Origin: 'https://api.api-ninjas.com/v1/worldtime?city='
+Header set  Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: 'Content-Length, Content-Type'
+

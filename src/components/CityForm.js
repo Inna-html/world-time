@@ -23,7 +23,7 @@ const CityForm = () => {
 
     return (
         <form onSubmit={handleSubmit(save)}>
-            <input type='text' placeholder={'City'} {...register('City')}/>
+            <input type='text' placeholder={'City'} {...register('city')}/>
             <button> add </button>
         </form>
     )

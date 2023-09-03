@@ -22,6 +22,7 @@ const getAll = createAsyncThunk(
 const create = createAsyncThunk(
     'citySlice/create',
     async({city}, thunkAPI) => {
+        
         try {
             await CityService.create(city)
             thunkAPI.dispatch(getAll())
@@ -43,7 +44,6 @@ const citySlice = createSlice({
             })
             .addCase(
                 getAll.pending, (state) => {
-                    // state.city = actions.payload
                     state.isLoading = true
             })
             .addCase(
